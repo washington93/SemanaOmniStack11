@@ -3,7 +3,7 @@
     max-width: 1120px;
     height: 100vh;
     margin: 0 auto;
-
+    
     display: flex;
     /*  flex-direction: column;  Muda o padrão de alinhamento dos elementos do display:flex*/
     align-items: center;    /* Alinha itens verticalmente */
