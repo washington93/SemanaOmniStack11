@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Image, TouchableOpacity, Text, Linking} from 'react-native'
+import {View, Image, TouchableOpacity, Text, Linking, ScrollView} from 'react-native'
 import {Feather} from '@expo/vector-icons'
 import {useNavigation, useRoute} from '@react-navigation/native'
 import * as MailComposer from 'expo-mail-composer'
@@ -41,10 +41,13 @@ export default function Detail(){
                     <Feather name="arrow-left" size={16} color="#E02041" />
                 </TouchableOpacity>
             </View>
+            <ScrollView 
+                showsVerticalScrollIndicator={false}>
             <View style={styles.incident}>
                     <Text style={styles.incidentProperty}>ONG:</Text>
-                    <Text style={styles.incidentValue}>{incident.name}</Text>
-
+                    <Text style={styles.incidentValue}>
+                        {incident.name} ({incident.city}/{incident.uf})
+                    </Text>
                     <Text style={styles.incidentProperty}>CASO:</Text>
                     <Text style={styles.incidentValue}>{incident.title}</Text>
 
@@ -79,6 +82,7 @@ export default function Detail(){
                     </TouchableOpacity>
                 </View>
             </View>
+            </ScrollView>
         </View>
     );
 }
