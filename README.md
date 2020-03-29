@@ -10,6 +10,9 @@ Projeto desenvolvido na semana OnmiStack 11.0 da Rocketseat, com Diego Fernandes
 * HTML & CSS]
 
 **Tecnologias**
+* [React](https://pt-br.reactjs.org/) - Usado no desenvolvimento da aplicação web, para que ela tivesse um comportamento de acordo com os princípios de um SPA(Single-page application).
+* [React Native](https://reactnative.dev/) - Biblioteca ultilizada para o desenvolvimento da aplicação mobile por meio de Javascript.
+* [Node.js](https://nodejs.org/) - Usado no gerenciamento de pacotes e controle das aplicações.
 * [Node.js](https://nodejs.org/) - Usado no gerenciamento de pacotes e controle das aplicações.
 * [expo](https://expo.io/) - Usado no ambiente de desenvolvimeto para dar acesso a recursos de dispositivos móveis, como câmera e GPS.
 
